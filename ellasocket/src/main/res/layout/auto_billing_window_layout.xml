@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/popupwindow_layout"
+        android:layout_width="@dimen/popupwindow_big_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/y335_bg_popupwindow"
+        android:orientation="vertical" >
+
+        <include layout="@layout/popupwindow_title_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popupwindow_big_content_height"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/popupwindow_title_left"
+            android:paddingRight="@dimen/popupwindow_title_left" >
+
+            <TextView
+                android:id="@+id/tv_auto_charge_electric"
+                style="@style/text_style_black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/auto_billing_edittext_height"
+                android:gravity="left|bottom"
+                android:paddingBottom="@dimen/auto_billing_electricity_padding" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/y335_line"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_style_black"
+                    android:layout_width="@dimen/auto_billing_electric_electric_price_width"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/yuan_per_degree" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/auto_billing_edittext_height"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/et_auto_charge_degree_price"
+                        style="@style/text_style_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:maxLength="6"
+                        android:paddingLeft="@dimen/auto_billing_edittext_left"
+                        android:textCursorDrawable="@drawable/y335_edittext_cursor_bg" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/y335_text_input"
+                        android:contentDescription="@string/app_name" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/popupwindow_one_button_layout" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/y335_bg_popupwindow"
+        android:orientation="vertical" >
+
+        <include layout="@layout/popupwindow_title_layout" />
+        <!-- wifi link -->
+        <LinearLayout
+            android:id="@+id/ll_popupwindow_wifi_link"
+            android:layout_width="@dimen/popupwindow_big_width"
+            android:layout_height="@dimen/popupwindow_big_content_height"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/popupwindow_title_left"
+            android:paddingRight="@dimen/popupwindow_title_left"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/edt_wifi_name"
+                style="@style/text_style_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popupwindow_editText_left"
+                android:layout_marginRight="@dimen/popupwindow_editText_left"
+                android:background="@null"
+                android:drawableLeft="@drawable/edittext_wifi_icon"
+                android:drawablePadding="3dp"
+                android:paddingLeft="3dp"
+                android:textCursorDrawable="@drawable/y335_edittext_cursor_bg" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popupwindow_title_left"
+                android:layout_marginRight="@dimen/popupwindow_title_left"
+                android:background="@drawable/y335_text_input"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/popupwindow_editText_left"
+                    android:layout_marginRight="@dimen/popupwindow_editText_left"
+                    android:layout_marginTop="@dimen/popupwindow_editText_left"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edt_wifi_password"
+                    style="@style/text_style_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/edittext_password_icon"
+                    android:drawablePadding="3dp"
+                    android:inputType="textPassword"
+                    android:paddingLeft="3dp"
+                    android:textCursorDrawable="@drawable/y335_edittext_cursor_bg" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_password_show_hide"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_wifi_password_hide"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popupwindow_title_left"
+                android:layout_marginRight="@dimen/popupwindow_title_left"
+                android:background="@drawable/y335_text_input"
+                android:contentDescription="@string/app_name" />
+            
+            <CheckBox
+                    android:id="@+id/cb_wifi_remember_password"                    
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:button="@drawable/button_checkbox"
+                    android:text="@string/remember_password" 
+                    android:textColor="@color/system_color_black"
+                    android:textSize="@dimen/login_check_text_size"/>
+        </LinearLayout>
+
+        <!-- auto billing -->
+
+        <LinearLayout
+            android:id="@+id/ll_popupwindow_auto_billing"
+            android:layout_width="@dimen/popupwindow_big_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/popupwindow_big_content_height"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/popupwindow_title_left"
+                android:paddingRight="@dimen/popupwindow_title_left" >
+
+                <TextView
+                    android:id="@+id/tv_auto_charge_electric"
+                    style="@style/text_style_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/auto_billing_edittext_height"
+                    android:gravity="left|bottom"
+                    android:paddingBottom="@dimen/auto_billing_electricity_padding" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/y335_line"
+                    android:contentDescription="@string/app_name" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_style_black"
+                        android:layout_width="@dimen/auto_billing_electric_electric_price_width"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/yuan_per_degree" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/auto_billing_edittext_height"
+                        android:layout_margin="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/et_auto_charge_degree_price"
+                            style="@style/text_style_black"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:inputType="numberDecimal"
+                            android:lines="1"
+                            android:maxLength="6"
+                            android:paddingLeft="@dimen/auto_billing_edittext_left"
+                            android:textCursorDrawable="@drawable/y335_edittext_cursor_bg" >
+
+                            <requestFocus />
+                        </EditText>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/y335_text_input"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- text -->
+
+        <LinearLayout
+            android:id="@+id/ll_popupwindow_text"
+            android:layout_width="@dimen/popupwindow_big_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:minHeight="@dimen/popupwindow_min_height"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/popupwindow_title_left"
+            android:paddingRight="@dimen/popupwindow_title_left"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_popupwindow_text"
+                style="@style/text_style_black"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left" />
+        </LinearLayout>
+        <!-- edittext -->
+
+        <LinearLayout
+            android:id="@+id/ll_popupwindow_edittext"
+            android:layout_width="@dimen/popupwindow_big_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:minHeight="@dimen/popupwindow_min_height"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/popupwindow_title_left"
+            android:paddingRight="@dimen/popupwindow_title_left"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/edt_socket_name"
+                style="@style/text_style_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popupwindow_title_left"
+                android:layout_marginRight="@dimen/popupwindow_title_left"
+                android:background="@null"
+                android:paddingLeft="5dp"
+                android:textCursorDrawable="@drawable/y335_edittext_cursor_bg" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popupwindow_title_left"
+                android:layout_marginRight="@dimen/popupwindow_title_left"
+                android:background="@drawable/y335_text_input"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <!-- time picker -->
+
+        <LinearLayout
+            android:id="@+id/ll_popupwindow_time_picker"
+            android:layout_width="@dimen/popupwindow_larger_width"
+            android:layout_height="@dimen/popupwindow_time_picker_content_height"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <rici.roplug.open.wheel.WheelView
+                android:id="@+id/daywheel"
+                android:layout_width="@dimen/time_picker_item_width"
+                android:layout_height="@dimen/time_picker_item_height"
+                android:layout_marginRight="@dimen/time_picker_margin" />
+
+            <rici.roplug.open.wheel.WheelView
+                android:id="@+id/hourwheel"
+                android:layout_width="@dimen/time_picker_item_width"
+                android:layout_height="@dimen/time_picker_item_height" />
+
+            <TextView
+                android:layout_width="@dimen/time_picker_margin"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/time_picker_current_textcolor"
+                android:textSize="@dimen/normal_textsize" >
+            </TextView>
+
+            <rici.roplug.open.wheel.WheelView
+                android:id="@+id/minuteswheel"
+                android:layout_width="@dimen/time_picker_item_width"
+                android:layout_height="@dimen/time_picker_item_height" />
+        </LinearLayout>
+
+        <!-- List LinearLayout -->
+
+        <LinearLayout
+            android:id="@+id/ll_popupwindow_list"
+            android:layout_width="@dimen/popupwindow_larger_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/lv_popupwindow"
+                style="@style/popupwindow_list_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/popupwindow_larger_content_height" >
+            </ListView>
+        </LinearLayout>
+
+        <!-- check link password -->
+
+        <LinearLayout
+            android:id="@+id/ll_popupwindow_check_link_password"
+            android:layout_width="@dimen/popupwindow_big_width"
+            android:layout_height="@dimen/popupwindow_big_content_height"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/popupwindow_title_left"
+            android:paddingRight="@dimen/popupwindow_title_left"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/edt_login_password"
+                style="@style/text_style_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popupwindow_editText_left"
+                android:layout_marginRight="@dimen/popupwindow_editText_left"
+                android:layout_marginTop="@dimen/popupwindow_title_left"
+                android:background="@null"
+                android:drawableLeft="@drawable/edittext_password_icon"
+                android:drawablePadding="3dp"
+                android:inputType="textPassword"
+                android:paddingLeft="3dp"
+                android:textCursorDrawable="@drawable/y335_edittext_cursor_bg" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/popupwindow_title_left"
+                android:layout_marginRight="@dimen/popupwindow_title_left"
+                android:background="@drawable/y335_text_input"
+                android:contentDescription="@string/app_name" />
+
+            <CheckBox
+                android:id="@+id/cb_show_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/socket_list_title_left"
+                android:layout_marginLeft="@dimen/popupwindow_editText_left"
+                android:layout_marginTop="@dimen/socket_list_title_left"
+                android:button="@drawable/button_checkbox"
+                android:checked="true"
+                android:text="@string/remember_password"
+                android:textColor="@color/search_list_offline_text_color" />
+        </LinearLayout>
+
+        <!-- menu button -->
+
+        <LinearLayout
+            android:id="@+id/ll_popupwindow_menu"
+            android:layout_width="@dimen/popupwindow_big_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+           
+			<Button
+                android:id="@+id/btn_menu_up"
+                style="@style/text_style_black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/popupwindow_button_height"
+                android:background="@drawable/button_menu_rename"
+                android:text="@string/firmware_update_title" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/y335_line"
+                android:contentDescription="@string/app_name" />
+            
+            <Button
+                android:id="@+id/btn_menu_middle"
+                style="@style/text_style_black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/popupwindow_button_height"
+                android:background="@drawable/button_menu_middle"
+                android:text="@string/button_rename" 
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_menu_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/y335_line"
+                android:contentDescription="@string/app_name" 
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_menu_down"
+                style="@style/text_style_black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/popupwindow_button_height"
+                android:background="@drawable/button_menu_delete"
+                android:text="@string/button_delete" />
+        </LinearLayout>
+		<!-- Imageview -->
+		<LinearLayout
+            android:id="@+id/ll_popupwindow_imageview"
+            android:layout_width="@dimen/popupwindow_big_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/popupwindow_min_height"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/popupwindow_title_left"
+            android:paddingRight="@dimen/popupwindow_title_left"
+            android:visibility="gone" >
+
+            <ImageView
+            	android:id="@+id/iv_popupwindow_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/popupwindow_title_left"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        
+        <include layout="@layout/popupwindow_button_layout" />
+
+        <include layout="@layout/popupwindow_one_button_layout" />
+    </LinearLayout>
+
+</FrameLayout>

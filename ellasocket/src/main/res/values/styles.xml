@@ -1,0 +1,385 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- parent="android:Theme.Light" -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="text_style_white">
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:textColor">@color/system_color_white</item>
+    </style>
+    
+    <style name="power_consumption_text_style_black">
+        <item name="android:textSize">@dimen/login_input_text_size</item>
+        <item name="android:textColor">@color/system_color_black</item>
+    </style>
+    <style name="power_consumption_number_text_style">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#fffacd89</item>
+    </style>
+    
+    <style name="text_style_black">
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:textColor">@color/system_color_black</item>
+    </style>
+    <style name="login_text_style_black">
+        <item name="android:textSize">@dimen/login_input_text_size</item>
+        <item name="android:textColor">@color/system_color_black</item>
+    </style>
+    
+    <style name="title_text_style">
+        <item name="android:textSize">@dimen/title_textsize</item>
+        <item name="android:textColor">@color/system_color_white</item>        
+    </style>
+
+    <style name="socket_main_button_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">@dimen/socket_main_button_drawable_padding</item>
+        <item name="android:onClick">socketElectricityButtonClick</item>
+        <item name="android:textSize">@dimen/socket_main_button_textsize</item>
+        <item name="android:textColor">@color/socket_main_button_color</item>
+    </style>
+
+    <style name="system_setting_text_style">
+        <item name="android:textColor">@color/system_color_black</item>
+    </style>
+
+    <style name="system_setting_item_name_text_style" parent="text_style_black">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="system_setting_item_button_style" parent="text_style_black">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:onClick">systemSettingButtonClick</item>
+    </style>
+    
+    <style name="edit_timing_function_button_style" parent="text_style_black">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">@dimen/timing_function_button_margin_left</item>
+        <item name="android:onClick">timingFunctionButtonClick</item>
+    </style>
+    
+    <style name="popupwindow_list_style">
+        <item name="android:divider">@drawable/y335_line</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+    
+    <!-- 自定义loading dialog 
+        <item name="android:progressDrawable">@drawable/progress_bar</item>-->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@drawable/bg_wait_progress</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+	</style>
+	 <style name="clean_button_style">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/button_clean</item>
+</style>
+     
+ <style name="device_link_animation" parent="android:Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/current_enter_from_down</item>  <!--  打开activity，设置activity进入展示动画  -->
+        <item name="android:activityOpenExitAnimation">@anim/last_exit_from_down</item>  <!--  打开activity，设置上个activity离开动画  -->
+        <item name="android:activityCloseEnterAnimation">@anim/last_enter_from_up</item>  <!--  结束activity，设置上个activity进入动画  -->
+        <item name="android:activityCloseExitAnimation">@anim/current_exit_from_up</item>  <!--  结束activity，设置当前activity离开动画  -->
+    </style>
+    
+ 	<style name="device_link_activity_theme">
+        <item name="android:windowAnimationStyle">@style/device_link_animation</item>        
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>	 
+
+ 	<style name="device_search_animation" parent="android:Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/current_enter_from_right</item>  <!--  打开activity，设置activity进入展示动画  -->
+        <item name="android:activityOpenExitAnimation">@anim/last_exit_from_right</item>  <!--  打开activity，设置上个activity离开动画  -->
+        <item name="android:activityCloseEnterAnimation">@anim/last_enter_from_left</item>  <!--  结束activity，设置上个activity进入动画  -->
+        <item name="android:activityCloseExitAnimation">@anim/current_exit_from_left</item>  <!--  结束activity，设置当前activity离开动画  -->
+    </style> 	
+ 	
+ 	<style name="device_search_activity_theme">
+        <item name="android:windowAnimationStyle">@style/device_search_animation</item>        
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>		 
+	 
+	<style name="dialog_show_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/current_enter_from_down</item>  <!--  打开activity，设置activity进入展示动画  -->
+        <item name="android:windowExitAnimation">@anim/current_exit_from_up</item>  <!--  结束activity，设置当前activity离开动画  -->
+    </style> 	
+ 	
+    <style name="popupwindown_edittext_style" parent="text_style_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/popupwindow_edittext_height</item>
+        <item name="android:drawablePadding">@dimen/edittext_drawable_padding</item>
+        <item name="android:textCursorDrawable">@drawable/y335_edittext_cursor_bg</item>
+        <item name="android:background">@null</item>
+    </style> 
+    <style name="toggle_button_style">
+        <item name="android:background">@drawable/button_toggle</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textOn">@null</item>
+        <item name="android:textOff">@null</item>
+        <item name="android:layout_marginRight">@dimen/timing_function_list_item_right</item>
+    </style>
+    
+    <style name="user_manage_input_bg_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_input_height</item>
+        <item name="android:layout_marginBottom">@dimen/login_input_margin_bottom</item>
+        <item name="android:background">@drawable/y335_login_input_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">loginClick</item>
+        <item name="android:paddingLeft">@dimen/login_text_padding_left</item>
+    </style>
+    
+    <style name="user_manage_edittext_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLength">16</item>
+        <item name="android:textColor">@color/system_color_white</item>
+        <item name="android:textColorHint">@color/login_text_hint_color</item>
+        <item name="android:textCursorDrawable">@drawable/y335_login_edittext_cursor_bg</item>
+        <item name="android:textSize">@dimen/normal_textsize</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    
+    
+    
+    
+
+    <style name="device_list_title_style">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/system_color_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/socket_list_title_top</item>
+    </style>
+
+    <style name="device_list_button_style">
+        <item name="android:background">@drawable/button_title_return</item>
+        <item name="android:textSize">@dimen/socket_list_button_textsize</item>
+        <item name="android:textColor">@color/device_result_button_textcolor</item>
+        <item name="android:layout_width">@dimen/socket_list_button_width</item>
+        <item name="android:layout_height">@dimen/socket_list_button_height</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:layout_marginTop">@dimen/socket_list_title_top</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="device_list_button_left_style" parent="device_list_button_style">
+        <item name="android:layout_marginLeft">@dimen/socket_list_title_left</item>
+    </style>
+
+    <style name="device_list_button_right_style" parent="device_list_button_style">
+        <item name="android:layout_marginRight">@dimen/socket_list_title_left</item>
+    </style>
+
+    <style name="popupwindow_button_style" parent="text_style_black">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/popupwindow_button_height</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="popupwindow_button_left_style" parent="popupwindow_button_style">
+        <item name="android:background">@drawable/popupwindow_button_left_bg</item>
+    </style>
+
+    <style name="popupwindow_button_right_style" parent="popupwindow_button_style">
+        <item name="android:background">@drawable/popupwindow_button_right_bg</item>
+    </style>
+
+    <style name="popupwindow_one_button_style" parent="text_style_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/popupwindow_button_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/popupwindow_one_button_bg</item>
+    </style>
+
+    <style name="popupwindow_button_exlarge_style">
+        <item name="android:textSize">@dimen/textView_textsize_normal</item>
+        <item name="android:layout_width">@dimen/popupwindow_button_width</item>
+        <item name="android:layout_height">@dimen/popupwindow_button_height</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="popupwindow_button_exlarge_left_style" parent="popupwindow_button_exlarge_style">
+        <item name="android:background">@drawable/popupwindow_button_exlarge_left_bg</item>
+    </style>
+
+    <style name="popupwindow_button_exlarge_right_style" parent="popupwindow_button_exlarge_style">
+        <item name="android:background">@drawable/popupwindow_button_exlarge_right_bg</item>
+    </style>
+
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/in</item>
+        <item name="android:windowExitAnimation">@anim/out</item>
+    </style>
+
+    <style name="socket_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/socket_list_item_height</item>
+        <item name="android:background">@drawable/device_list_item_bg</item>
+    </style>
+
+    <style name="socket_item_image">
+        <item name="android:layout_marginLeft">@dimen/socket_list_imaege_left</item>
+        <item name="android:layout_marginRight">@dimen/socket_list_imaege_right</item>
+        <item name="android:layout_marginBottom">@dimen/socket_list_imaege_right</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="socket_item_text">
+        <item name="android:textSize">@dimen/textView_textsize_normal</item>
+        <item name="android:textColor">@color/popupwindow_button_text_color</item>
+        <item name="android:layout_marginBottom">@dimen/socket_list_imaege_right</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="socket_gridlayout_imagebutton">
+        <item name="android:layout_marginLeft">@dimen/socket_gridlayout_imagebutton_left</item>
+        <item name="android:layout_marginTop">@dimen/socket_gridlayout_imagebutton_top</item>
+    </style>
+
+    <style name="socket_gridlayout_name">
+        <item name="android:textSize">@dimen/socket_gridlayout_item_textsize</item>
+        <item name="android:textColor">@color/time_picker_textcolor</item>
+    </style>
+
+    <style name="socket_electric_diagram_style">
+        <item name="android:textColor">@color/history_electric_draw_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="socket_electric_diagram_title_style" parent="socket_electric_diagram_style">
+        <item name="android:textColor">@color/history_electric_draw_color</item>
+        <item name="android:textSize">@dimen/textView_textsize_normal</item>
+        <item name="android:layout_marginLeft">@dimen/socket_electric_title_left</item>
+    </style>
+
+    <style name="socket_electric_diagram_name_style" parent="socket_electric_diagram_style">
+        <item name="android:textSize">@dimen/socket_electric_diagram_textsize</item>
+    </style>
+
+    <style name="socket_electric_socket_name_style">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/socket_electric_socket_name_textsize</item>
+        <item name="android:textColor">@color/history_electric_draw_color</item>
+    </style>
+
+    <style name="socket_electric_toggle_button_style" parent="toggle_button_style">
+        <item name="android:layout_marginLeft">@dimen/socket_electric_togglebutton_left</item>
+        <item name="android:layout_marginTop">@dimen/socket_electric_togglebutton_top</item>
+    </style>
+
+    <style name="system_setting_name_text_style" parent="system_setting_text_style">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/system_title_textsize</item>
+        <item name="android:layout_marginRight">@dimen/system_title_right</item>
+    </style>
+
+    <style name="socket_gridlayout_popupwindow_item_style">
+        <item name="android:textColor">@color/system_color_white</item>
+        <item name="android:textSize">@dimen/textView_textsize_normal</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/popupwinow_option_padding_left</item>
+    </style>
+
+    <style name="socket_gridlayout_popupwindow_item_above_style" parent="socket_gridlayout_popupwindow_item_style">
+        <item name="android:background">@drawable/popupwindow_menu_above_bg</item>
+    </style>
+
+    <style name="socket_gridlayout_popupwindow_item_below_style" parent="socket_gridlayout_popupwindow_item_style">
+        <item name="android:background">@drawable/popupwindow_menu_below_bg</item>
+    </style>
+
+    <style name="timing_function_checkbox_style">
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/button_checkbox</item>
+        <item name="android:layout_marginLeft">@dimen/timing_function_checkbox_margin</item>
+        <item name="android:layout_marginRight">@dimen/timing_function_checkbox_margin</item>
+        <item name="android:textColor">@color/popupwindow_button_text_color</item>
+        <item name="android:textSize">@dimen/textView_textsize_normal</item>
+        <item name="android:layout_height">@dimen/timing_function_checkbox_height</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Theme.picker" parent="android:Theme.Holo.Light">
+        <item name="android:editTextStyle">@style/Widget.EditText.White</item>
+    </style>
+
+    <style name="Widget.EditText.White" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/popupwindow_button_text_color</item>
+    </style>
+
+    <style name="auto_charge_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/auto_charge_list_item_height</item>
+    </style>
+
+    <style name="auto_charge_item_image">
+        <item name="android:layout_width">@dimen/auto_charge_list_button_width</item>
+        <item name="android:layout_height">@dimen/auto_charge_list_button_width</item>
+        <item name="android:textSize">@dimen/auto_charge_list_button_textsize</item>
+        <item name="android:textColor">@color/system_color_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/auto_charge_list_text_left</item>
+    </style>
+
+    <style name="auto_charge_item_text">
+        <item name="android:textSize">@dimen/auto_charge_list_textsize</item>
+        <item name="android:textColor">@color/popupwindow_button_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/auto_charge_list_text_left</item>
+        <item name="android:layout_marginRight">@dimen/auto_charge_list_text_right</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="electricity_analyse_socket_name" parent="text_style_black">
+        <item name="android:layout_marginLeft">@dimen/system_padding_left</item>
+        <item name="android:layout_marginRight">@dimen/system_padding_left</item>
+        <item name="android:drawableLeft">@drawable/y335_search_list_item_icon</item>
+        <item name="android:drawablePadding">@dimen/search_icon_padding</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="auto_electric_analyse_electric" parent="text_style_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:layout_marginRight">@dimen/system_padding_left</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/socket_grid_lock_anim_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/socket_grid_lock_anim_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/socket_grid_lock_anim_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/socket_grid_lock_anim_in</item>
+    </style>
+
+    <style name="mask_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/view_mask_color</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

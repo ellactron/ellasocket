@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" style="@style/socket_item">
+
+    <ImageView
+        style="@style/socket_item_image"
+        android:id="@+id/deviceIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/device_item_icon" 
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        style="@style/socket_item_text"
+        android:id="@+id/deviceName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>

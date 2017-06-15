@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rici.roplug.open.view.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/y335_login_bg"
+        android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_input_margin_left"
+            android:layout_marginRight="@dimen/login_input_margin_left"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!--
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_input_margin_top"
+                    android:layout_marginTop="@dimen/login_logo_margin_top"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/y335_login_logo" 
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_username"         
+                style="@style/user_manage_input_bg_style" >
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    style="@style/user_manage_edittext_style"
+            		android:inputType="text"                    
+                    android:drawableLeft="@drawable/y335_login_username_icon"
+                    android:drawablePadding="@dimen/login_text_drawable_padding"
+                    android:hint="@string/username" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_username_clean"
+                    style="@style/clean_button_style"
+                    android:onClick="loginClick"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_password"
+                style="@style/user_manage_input_bg_style" >
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    style="@style/user_manage_edittext_style"
+                    android:drawableLeft="@drawable/y335_login_password_icon"
+                    android:drawablePadding="@dimen/login_text_drawable_padding"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_password_show_hide"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_password_hide"
+                    android:onClick="loginClick" 
+                    android:contentDescription="@string/app_name"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/login_input_margin_bottom" >
+
+               <CheckBox
+                    android:id="@+id/cb_login_remember_password"                    
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/button_login_checkbox"
+                    android:text="@string/remember_password" 
+                    android:textColor="@color/system_color_white"
+                    android:textSize="@dimen/login_check_text_size"/>
+
+                <CheckBox
+                    android:id="@+id/cb_login_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/button_login_checkbox"
+                    android:text="@string/auto_login" 
+                    android:textColor="@color/system_color_white"
+                    android:textSize="@dimen/login_check_text_size"/>       
+            </RelativeLayout>
+            
+            <Button
+                    android:id="@+id/btn_login_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/popupwindow_button_height"
+                    android:background="@drawable/button_login"
+                    android:enabled="false"
+                    android:onClick="loginClick"
+                    android:text="@string/login"
+                    android:textColor="@color/login_button_color"
+                    android:textSize="@dimen/title_textsize" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/login_input_margin_left"
+        android:layout_marginRight="@dimen/login_input_margin_left" >
+
+        <Button
+            android:id="@+id/btn_registe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:drawableRight="@drawable/y335_login_registe_icon"
+            android:onClick="loginClick"
+            android:text="@string/new_user"
+            android:textColor="@color/system_color_white"
+            android:textSize="@dimen/login_new_user_text_size" />
+    </RelativeLayout>
+
+</rici.roplug.open.view.ResizeLayout>

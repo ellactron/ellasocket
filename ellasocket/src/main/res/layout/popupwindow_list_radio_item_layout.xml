@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <RadioButton
+        android:id="@+id/rb_popupwindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textView_textsize_normal"
+        android:button="@null"
+        android:drawableRight="@drawable/button_radio_bg"
+        />
+
+</LinearLayout>

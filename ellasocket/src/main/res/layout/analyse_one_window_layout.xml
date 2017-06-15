@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupwindow_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/popupwindow_padding"
+    android:background="@drawable/popupwindow_bg_exlarge"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <include layout="@layout/popupwindow_title_exlarge_layout" />
+
+    <ListView
+        android:id="@+id/auto_charge_list"
+        android:layout_width="@dimen/popupwindow_width"
+        android:layout_height="@dimen/popupwindow_height_big_no_button"
+        android:divider="#00000000"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

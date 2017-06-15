@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/y335_bg_list_view"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_return_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/system_padding_left"
+        android:layout_marginRight="@dimen/system_padding_left"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/system_setting_item_height"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/system_setting_item_name_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/select_sock" />
+
+                <Button
+                    android:id="@+id/btn_select_sock"
+                    style="@style/edit_timing_function_button_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="1"
+                    android:minHeight="@dimen/system_setting_item_height"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/y335_timing_function_more_line"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/system_setting_item_height"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/system_setting_item_name_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/timing_time" />
+
+                <Button
+                    android:id="@+id/btn_timing_time"
+                    style="@style/edit_timing_function_button_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/y335_timing_function_more_line"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/system_setting_item_height"
+                android:layout_gravity="center_vertical|left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/system_setting_item_name_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/circulation_mode" />
+
+                <Button
+                    android:id="@+id/btn_circulation_mode"
+                    style="@style/edit_timing_function_button_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/y335_timing_function_more_line"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/system_setting_item_height"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/system_setting_item_name_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/power_switch" />
+
+            <RadioGroup
+                android:id="@+id/rg_power_onoff"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/timing_function_button_margin_left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_power_on"
+                    style="@style/system_setting_item_name_text_style"
+                    android:layout_width="@dimen/timing_function_radio_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/timing_function_radio_margin_right"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/button_radio_bg"
+                    android:text="@string/power_on" 
+                    android:textSize="@dimen/login_check_text_size"/>
+
+                <RadioButton
+                    android:id="@+id/rb_power_off"
+                    style="@style/system_setting_item_name_text_style"
+                    android:layout_width="@dimen/timing_function_radio_width"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="@drawable/button_radio_bg"
+                    android:text="@string/power_off"
+                    android:textSize="@dimen/login_check_text_size" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/y335_line"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/text_style_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popupwindow_button_height"
+        android:layout_marginBottom="@dimen/system_padding_left"
+        android:layout_marginLeft="@dimen/system_padding_left"
+        android:layout_marginRight="@dimen/system_padding_left"
+        android:background="@drawable/y335_bg_history_electricity"
+        android:onClick="timingFunctionButtonClick"
+        android:text="@string/button_save" />
+
+</LinearLayout>

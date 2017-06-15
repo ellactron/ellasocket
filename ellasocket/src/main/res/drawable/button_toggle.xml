@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_checked="true"><bitmap android:gravity="center_horizontal" android:src="@drawable/y335_socket_toggle_on" android:tileMode="disabled" />
+    </item>
+    <item><bitmap android:gravity="center_horizontal" android:src="@drawable/y335_socket_toggle_off" android:tileMode="disabled" />
+    </item>
+</selector>

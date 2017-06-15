@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+def keystorePropertiesFile = file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    /** Run below command to generate release package under "<module>\build\outputs\apk" folder
+          > gradlew assembleRelease
+    */
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileSdkVersion 19
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "rici.roplug.open"
+        minSdkVersion 14
+        targetSdkVersion 19
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:19.0.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile files('libs/newsimpleconfiglib.jar')
+    compile files('libs/roplug_open_1.0.1_.jar')
+    compile files('libs/simpleconfiglib.jar')
+    compile files('libs/zxing.jar')
+}

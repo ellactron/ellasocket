@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+/EllaClient.iml
+/.idea/
+/gradle/
+/.gradle/
+/build/
+/local.properties
+/ellasocket/build/
+/ellasocket/ellasocket.iml
+keystore.properties
+android_release.jks
+ellasocket-release.apk
+ellasocket-debug.apk

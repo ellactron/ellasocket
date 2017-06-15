@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/y335_bg_list_view"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_return_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/system_setting_item_height"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/system_padding_left"
+        android:paddingRight="@dimen/system_padding_right" >
+
+        <Button
+            android:id="@+id/btn_aboutme_version"
+            style="@style/system_setting_item_button_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/versionName" />
+
+        <TextView
+            android:id="@+id/tv_current_version"
+            style="@style/system_setting_item_name_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/y335_line"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/system_setting_item_height"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/system_padding_left" >
+
+        <TextView
+            style="@style/system_setting_item_name_text_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/feedBack" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/y335_line"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/y335_setting_aboutus" />
+    </LinearLayout>
+
+</LinearLayout>

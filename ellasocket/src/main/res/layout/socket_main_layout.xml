@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_gas_quality_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <rici.roplug.open.view.CustomerViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@+id/tw_switch_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_list_item_height"
+            android:tabStripEnabled="false" >
+
+            <ImageButton
+                android:id="@+id/ib_socket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_socket"
+                android:tileMode="disabled"
+                android:contentDescription="@string/app_name"
+                android:onClick="TabButtonClick" />
+
+            <ImageButton
+                android:id="@+id/ib_saving"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_energy_saving"
+                android:tileMode="disabled"
+                android:contentDescription="@string/app_name"
+                android:onClick="TabButtonClick" />
+
+            <ImageButton
+                android:id="@+id/ib_setting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_setting"
+                android:tileMode="disabled"
+                android:contentDescription="@string/app_name"
+                android:onClick="TabButtonClick" />
+        </TabWidget>
+    </LinearLayout>
+
+</FrameLayout>

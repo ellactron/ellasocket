@@ -1,0 +1,228 @@
+<resources>
+
+    <!-- commond -->
+    <dimen name="system_padding_left">17dp</dimen>
+    <dimen name="system_padding_right">24dp</dimen>
+    <dimen name="popupwindow_big_width">266dp</dimen>
+    <dimen name="popupwindow_big_height">220dp</dimen>
+    <dimen name="popupwindow_big_content_height">124dp</dimen>
+    <dimen name="popupwindow_min_height">78dp</dimen>
+    <dimen name="popupwindow_larger_width">300dp</dimen>
+    <dimen name="popupwindow_larger_content_height">331dp</dimen>
+    <dimen name="popupwindow_time_picker_content_height">190dp</dimen>
+    <dimen name="popupwindow_title_left">16dp</dimen>
+    <dimen name="popupwindow_editText_left">13dp</dimen>
+    <dimen name="popupwindow_title_height">47dp</dimen>
+    <dimen name="popupwindow_button_height">47dp</dimen>
+    <dimen name="popupwindow_padding_h">16dp</dimen>
+    <dimen name="system_setting_item_height">60dp</dimen>
+    <dimen name="title_textsize">20dp</dimen>
+    <dimen name="normal_textsize">17dp</dimen>
+    <dimen name="search_list_item_height">60dp</dimen>
+    <dimen name="list_margin">18dp</dimen>
+    
+    <!-- login screen -->
+    <dimen name="login_logo_margin_top">84dp</dimen>
+    <dimen name="login_input_margin_left">63dp</dimen>
+    <dimen name="login_input_margin_top">44dp</dimen>
+    <dimen name="login_input_height">47dp</dimen>
+    <dimen name="login_button_width">100dp</dimen>
+    <dimen name="login_input_margin_bottom">20dp</dimen>
+    <dimen name="login_new_user_text_size">14dp</dimen>
+    <dimen name="login_text_padding_left">13dp</dimen>
+    <dimen name="login_text_drawable_padding">10dp</dimen>
+    <dimen name="login_input_text_size">15dp</dimen>
+    <dimen name="login_check_text_size">14dp</dimen>
+    <!-- search screen -->
+    <dimen name="search_edittext_margin_left">20dp</dimen>
+    <dimen name="search_button_margin_padding_bottom">15px</dimen>
+    <dimen name="search_button_margin">50px</dimen>
+    <dimen name="search_button_textsize">60px</dimen>
+    <dimen name="search_failure_icon_margin_bottom">58px</dimen>
+    <dimen name="search_failure_textsize">19dp</dimen>
+    <dimen name="search_link_button_margin">40px</dimen>
+    <dimen name="search_icon_padding">5dp</dimen>
+    <dimen name="search_list_item_state_textsize">15dp</dimen>
+    <dimen name="search_list_item_down_textsize">14dp</dimen>
+    <dimen name="popupwindow_padding">30px</dimen>
+    <dimen name="popupwindow_edittext_width">233dp</dimen>
+    <dimen name="popupwindow_edittext_height">49dp</dimen>
+    <dimen name="popupwindow_imageview_width">200dp</dimen>
+    <!-- socket main -->
+    <dimen name="socket_main_button_textsize">13dp</dimen>
+    <dimen name="current_electricity_textsize">88dp</dimen>
+    <dimen name="current_electricity_middle_textsize">70dp</dimen>
+    <dimen name="current_electricity_small_textsize">25dp</dimen>
+    <dimen name="socket_electric_number_margin_top">45dp</dimen>
+    <dimen name="socket_main_button_margin_top">10dp</dimen>
+    <dimen name="socket_main_button_line_padding_top">5dp</dimen>
+    <dimen name="socket_main_button_line_padding_bottom">7dp</dimen>
+    <dimen name="socket_main_current_electricity_margin_top">7dp</dimen>
+    <dimen name="socket_main_bottom_button_padding">10dp</dimen>
+    <dimen name="socket_main_button_drawable_padding">5dp</dimen>
+    <dimen name="socket_main_button_padding">20dp</dimen>
+    <dimen name="socket_main_button_power_margin_top">27dp</dimen>
+    <dimen name="socket_grid_item_width">120dp</dimen>
+    <dimen name="socket_grid_item_height">127dp</dimen>
+    <dimen name="socket_grid_item_name_margin_top">10dp</dimen>
+    
+    
+    <dimen name="socket_gridlayout_item_textsize">14dp</dimen>
+    <!-- history electricity -->
+    <dimen name="history_electricity_width">300dp</dimen>
+    <dimen name="history_electricity_height">350dp</dimen>
+    <dimen name="history_electricity_tab_height">37dp</dimen>
+    <dimen name="history_electricity_padding_h">14dp</dimen>
+    <dimen name="history_electricity_padding_v">19dp</dimen>
+    <dimen name="history_electricity_point_bottom">46dp</dimen>
+    <dimen name="history_electricity_point_top">27dp</dimen>
+    <dimen name="history_electricity_label_text_size">11dp</dimen>
+    <dimen name="history_electricity_show_text_size">15dp</dimen>
+    <dimen name="history_electricity_pop_text_size">36dp</dimen>
+    <dimen name="history_electricity_draw_line_size">2.7dp</dimen>
+    <dimen name="history_electricity_wait_width">200dp</dimen>
+    <!--
+    <dimen name="history_electricity_scale_y">27dp</dimen>
+    <dimen name="history_electricity_scale_x">22dp</dimen>
+    -->
+
+    <dimen name="history_electricity_item_text_size">15dp</dimen>
+    <dimen name="history_electric_day_text_size">11dp</dimen>
+
+    <!-- auto billing -->
+    <dimen name="auto_billing_edittext_height">47dp</dimen>
+    <dimen name="auto_billing_electric_electric_price_width">65dp</dimen>
+    <dimen name="auto_billing_electricity_padding">3dp</dimen>
+    <dimen name="auto_billing_edittext_left">6dp</dimen>
+
+    <!-- timing function -->
+    <dimen name="timing_function_radio_width">85dp</dimen>
+    <dimen name="timing_function_radio_margin_right">20dp</dimen>
+    <dimen name="time_picker_item_width">60dp</dimen>
+    <dimen name="time_picker_item_height">140dp</dimen>
+    <dimen name="time_picker_margin">20dp</dimen>
+    <dimen name="timing_function_list_item_summy_textsize">11dp</dimen>    
+    <dimen name="timing_function_list_item_left">10dp</dimen> 
+    <dimen name="timing_function_list_item_right">10dp</dimen>        
+    
+	<dimen name="timing_function_button_margin_left">12px</dimen>
+    <dimen name="timing_function_add_left">38px</dimen>
+    <dimen name="timing_function_title_left">35px</dimen>
+    <dimen name="timing_function_title_top">60px</dimen>
+    <dimen name="timing_function_title_height">120px</dimen>
+    <dimen name="timing_function_radio_left">46px</dimen>
+    <dimen name="timing_function_weekday_height">423px</dimen>
+    <dimen name="timing_function_checkbox_margin">60px</dimen>
+    <dimen name="timing_function_checkbox_height">140px</dimen>
+    <dimen name="timing_function_wheelview_width">180px</dimen>
+    <dimen name="timing_function_wheelview_height">480px</dimen>
+    <dimen name="timing_function_delete_text_left">30px</dimen>
+    
+
+    <!-- system setting -->
+    <dimen name="system_setting_item_padding_right">10dp</dimen>
+    <dimen name="textView_textsize_normal">60px</dimen>
+    <dimen name="edittext_drawable_padding">20px</dimen>
+    <dimen name="search_result_title_height">60dp</dimen>
+    <dimen name="first_empty_logo_left">377px</dimen>
+    <dimen name="first_empty_logo_top">391px</dimen>
+    <dimen name="first_empty_add_button_left">366px</dimen>
+    <dimen name="first_empty_add_button_top">107px</dimen>
+    <dimen name="first_empty_text_top">500px</dimen>
+    <dimen name="popupwindow_button_width_narrow">398px</dimen>
+    <dimen name="popupwindow_button_width">449px</dimen>
+    <dimen name="popupwindow_padding_small">90px</dimen>
+    <dimen name="popupwindow_message_height_small">315px</dimen>
+    <dimen name="popupwindow_edittext_bottom_small">30px</dimen>
+    <dimen name="popupwindow_message_height_middle">234px</dimen>
+    <dimen name="popupwindow_message_height_big">397px</dimen>
+    <dimen name="popupwindow_height_big_no_button">1200px</dimen>
+    <dimen name="popupwindow_title_left_middle">80px</dimen>
+    <dimen name="popupwinow_option_padding_left">30px</dimen>
+    <dimen name="popupwindow_width">900px</dimen>
+    <!-- input wifi password begin -->
+    <dimen name="input_wifi_password_title_margin">80px</dimen>
+    <dimen name="input_wifi_password_margin_top">250px</dimen>
+    <dimen name="input_wifi_password_padding">3px</dimen>
+    <dimen name="input_wifi_password_edittext_margin">40px</dimen>
+    <!-- input wifi password end -->
+    <dimen name="socket_list_button_textsize">58px</dimen>
+    <dimen name="socket_list_button_width">184px</dimen>
+    <dimen name="socket_list_button_height">114px</dimen>
+    <dimen name="socket_list_title_left">40px</dimen>
+    <dimen name="socket_list_title_right">40px</dimen>
+    <dimen name="socket_list_title_top">30px</dimen>
+    <dimen name="socket_list_item_margin">30px</dimen>
+    <dimen name="socket_list_item_divider">20px</dimen>
+    <dimen name="socket_list_item_height">206px</dimen>
+    <dimen name="socket_list_imaege_left">40px</dimen>
+    <dimen name="socket_list_imaege_right">30px</dimen>
+    <dimen name="socket_toggle_button_width">178px</dimen>
+    <dimen name="socket_toggle_button_height">118px</dimen>
+    <!-- socket gridlayout begin -->
+    <dimen name="socket_gridlayout_logo_left">99px</dimen>
+    <dimen name="socket_gridlayout_logo_top">72px</dimen>
+    <dimen name="socket_gridlayout_dropdown_left">187px</dimen>
+    <dimen name="socket_gridlayout_dropdown_top">234px</dimen>
+    <dimen name="socket_gridlayout_add_left">190px</dimen>
+    <dimen name="socket_gridlayout_add_top">69px</dimen>
+    <dimen name="socket_gridlayout_item_width">330px</dimen>
+    <dimen name="socket_gridlayout_item_height">330px</dimen>
+    <dimen name="socket_gridlayout_pagecount_bottom">10px</dimen>
+    <dimen name="socket_gridlayout_pagecount_height">60px</dimen>
+    <dimen name="socket_gridlayout_imagebutton_top">19px</dimen>
+    <dimen name="socket_gridlayout_imagebutton_left">51px</dimen>
+    <dimen name="socket_gridlayout_left">25px</dimen>
+    <dimen name="socket_gridlayout_item_left">0px</dimen>
+    <dimen name="socket_gridlayout_item_top">15px</dimen>
+    <dimen name="socket_gridlayout_lock_arrow_up_top">304px</dimen>
+    <dimen name="socket_gridlayout_h_line_top">60px</dimen>
+    <dimen name="socket_gridlayout_edittext_bg_bottom">50px</dimen>
+    <dimen name="socket_gridlayout_popupwindow_left">30px</dimen>
+    <!-- socket gridlayout end -->
+
+
+    <!-- socket electric begin -->
+    <dimen name="socket_electric_togglebutton_left">50px</dimen>
+    <dimen name="socket_electric_togglebutton_top">13px</dimen>
+    <dimen name="socket_electric_diagram_textsize">38px</dimen>
+    <dimen name="socket_electric_toast_text_size">108px</dimen>
+    <dimen name="socket_electric_return_button_top">27px</dimen>
+    <dimen name="socket_electric_return_button_left">22px</dimen>
+    <dimen name="socket_electric_socket_name_textsize">76px</dimen>
+    <dimen name="socket_electric_toggle_button_top">47px</dimen>
+    <dimen name="socket_electric_toggle_button_right">84px</dimen>
+    <dimen name="socket_electric_title_top">60px</dimen>
+    <dimen name="socket_electric_title_left">40px</dimen>
+    <dimen name="socket_electric_view_left">90px</dimen>
+    <dimen name="socket_electric_view_right">90px</dimen>
+    <dimen name="socket_electric_month_view_left">70px</dimen>
+    <dimen name="socket_electric_month_view_right">70px</dimen>
+    <dimen name="socket_electric_view_top">75px</dimen>
+    <dimen name="socket_electric_view_height">600px</dimen>
+    <dimen name="socket_electric_month_view_height">750px</dimen>
+    <dimen name="socket_electric_year_view_left">104px</dimen>
+    <dimen name="socket_electric_year_view_right">5px</dimen>
+    <dimen name="socket_electric_year_name_bottom">70px</dimen>
+    <dimen name="auto_charge_used_electric_textsize">40px</dimen>
+    <dimen name="auto_charge_used_electric_height">144px</dimen>
+    <dimen name="auto_charge_list_item_height">140px</dimen>
+    <dimen name="auto_charge_list_text_left">40px</dimen>
+    <dimen name="auto_charge_list_text_right">20px</dimen>
+    <dimen name="auto_charge_list_item_margin">80px</dimen>
+    <dimen name="auto_charge_list_textsize">50px</dimen>
+    <dimen name="auto_charge_list_button_width">60px</dimen>
+    <dimen name="auto_charge_list_button_textsize">40px</dimen>
+    <!-- socket electric end -->
+    <!-- system setting begin -->
+    <dimen name="system_title_textsize">76px</dimen>
+    <dimen name="system_title_right">152px</dimen>
+    <dimen name="system_setting_item_image_right">30px</dimen>
+    <dimen name="system_setting_company_name_textsize">36px</dimen>
+    <dimen name="system_setting_copy_right_textsize">24px</dimen>
+    <dimen name="system_setting_check_button_top">75px</dimen>
+    <dimen name="system_setting_check_button_bottom">63px</dimen>
+    <dimen name="electric_analyse_save_electric_width">200px</dimen>
+    <!-- system setting end -->
+
+</resources>

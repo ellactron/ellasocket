@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popupwindow_bg_exlarge"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <include layout="@layout/popupwindow_title_exlarge_layout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/timing_function_add_time_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rg_power_onoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/timing_function_title_left"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_power_on"
+                android:layout_width="@dimen/timing_function_radio_width"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/timing_function_radio_margin_right"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/button_radio_bg"
+                android:text="@string/power_on"
+                android:textColor="@color/auto_charge_electric_price_text_color"
+                android:textSize="@dimen/login_check_text_size" />
+
+            <RadioButton
+                android:id="@+id/rb_power_off"
+                android:layout_width="@dimen/timing_function_radio_width"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableRight="@drawable/button_radio_bg"
+                android:text="@string/power_off"
+                android:textColor="@color/auto_charge_electric_price_text_color"
+                android:textSize="@dimen/login_check_text_size" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TimePicker
+                android:id="@+id/tp_timing_function"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/timing_function_wheelview_height" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/timing_function_weekday_height"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/cb_monday"
+                style="@style/timing_function_checkbox_style"
+                android:text="@string/monday" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/popupwindow_line" />
+
+            <CheckBox
+                android:id="@+id/cb_tuesday"
+                style="@style/timing_function_checkbox_style"
+                android:text="@string/tuesday" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/popupwindow_line" />
+
+            <CheckBox
+                android:id="@+id/cb_wednesday"
+                style="@style/timing_function_checkbox_style"
+                android:text="@string/wednesday" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/popupwindow_line" />
+
+            <CheckBox
+                android:id="@+id/cb_thursday"
+                style="@style/timing_function_checkbox_style"
+                android:text="@string/thursday" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/popupwindow_line" />
+
+            <CheckBox
+                android:id="@+id/cb_friday"
+                style="@style/timing_function_checkbox_style"
+                android:text="@string/friday" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/popupwindow_line" />
+
+            <CheckBox
+                android:id="@+id/cb_saturday"
+                style="@style/timing_function_checkbox_style"
+                android:text="@string/saturday" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/popupwindow_line" />
+
+            <CheckBox
+                android:id="@+id/cb_sunday"
+                style="@style/timing_function_checkbox_style"
+                android:text="@string/sunday" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/popupwindow_button_exlarge_layout" />
+
+</LinearLayout>

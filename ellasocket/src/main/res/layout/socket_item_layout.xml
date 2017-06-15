@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/socket_grid_item_width"
+        android:layout_height="@dimen/socket_grid_item_height"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_socket_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/socketName"
+                    style="@style/socket_gridlayout_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/socket_grid_item_name_margin_top"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/y335_current_socket" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/grid_horizontal_line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/socket_gridview_line_color" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/grid_vertical_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/socket_gridview_line_color" />
+
+</LinearLayout>

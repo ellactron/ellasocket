@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/y335_bg_list_view"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/system_padding_left" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/system_setting_item_height"
+            android:orientation="horizontal" 
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/system_setting_item_image_right"
+                android:src="@drawable/y335_system_setting_over_protection" />
+
+            <TextView
+                style="@style/system_setting_item_name_text_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/over_protection" />
+
+            <ImageButton
+                android:id="@+id/ib_overProtection"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/timing_function_list_item_right"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <!--
+             <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/y335_line"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/system_setting_item_height"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/system_setting_item_image_right"
+                android:src="@drawable/y335_system_setting_wifi" />
+
+            <TextView
+                style="@style/system_setting_item_name_text_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/wifi_setting" />
+
+            <ToggleButton
+                android:id="@+id/wifiToggleButton"
+                style="@style/toggle_button_style" />
+        </LinearLayout>
+        -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/y335_line"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/system_setting_item_height"
+            android:orientation="horizontal" 
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/system_setting_item_image_right"
+                android:src="@drawable/y335_system_setting_aboutme" 
+                />
+
+            <Button
+                android:id="@+id/btn_setting_aboutme"
+                style="@style/system_setting_item_button_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/about_us" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/y335_line"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/system_setting_item_height"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_setting_modify_password"
+                style="@style/system_setting_item_button_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/y335_system_setting_modify_password"
+                android:drawablePadding="@dimen/system_setting_item_image_right"
+                android:text="@string/modify_password" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/y335_line"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/system_setting_item_height"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_setting_login_out"
+                style="@style/system_setting_item_button_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/y335_system_setting_logout"
+                android:drawablePadding="@dimen/system_setting_item_image_right"
+                android:text="@string/save_exit" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/y335_line"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+</LinearLayout>

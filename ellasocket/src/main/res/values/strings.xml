@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ellactron</string>
+    
+    <!-- search  --> 
+    <string name="network_link">Network connect</string>
+    <string name="progress_search_device">Searching device,please wait&#8230;</string>
+    <string name="progress_add_device">Adding device,please wait&#8230;</string>
+	<string name="progress_wait">Please wait&#8230;</string>
+	<string name="refreshing">Refreshing&#8230;</string>
+	<string name="pull_down_to_refresh">Pull down to refresh</string>
+	<string name="release_to_refresh">Release to refresh</string>
+    <string name="device_title">Roplug</string>
+    <string name="device_list_location">Local</string>
+    <string name="device_list_remote">Remote</string> 
+    <string name="device_list_online">Online</string>
+    <string name="device_list_offline">Offline</string>  
+    <string name="search_none_device">Sorry! No new roplug was found!</string>	
+	<string name="link_password">Connect password</string>	
+	<string name="switch_user_confirm_text">Sure to exit current user?</string>	
+	
+	<string name="exit_click_again">Click again to exit program</string>      
+	<string name="button_confirm">Ok</string>
+	<string name="button_cancel">cancel</string>
+	<string name="button_delete">Delete</string>
+	<string name="button_rename">Rename</string>
+	<string name="button_edit">Edit</string>
+	<string name="button_switch_user">Switch user</string>
+    
+    <!-- socket main -->
+    <string name="socket_electricity_unit_w">"wh"</string>
+    <string name="socket_electricity_unit_kw">"kwh"</string>
+    <string name="current_electricity">Current power consumption</string>    
+    <string name="history_electricity">History of power consumption</string>
+    <string name="day_history_electricity">Daily power consumption</string>
+    <string name="month_history_electricity">Monthly power consumption</string>
+    <string name="year_history_electricity">Annual power consumption</string>
+    <string name="history_electricity_unit_kw">"Unit:kw"</string>
+	<string name="get_data_from_server">Getting data from the server, please wait&#8230;</string>
+    <string name="get_data_failure">Failure to get data from the server,<u>please try again</u>!</string>
+    <string name="socket_list">Roplug list</string>
+    
+	<string name="analyse_one">Independent analysis of electric power consumption</string>	
+	<string name="power_consumption">Power consumption</string>
+	<string name="voltage">Voltage:%1$s V</string>
+	<string name="current">Current:%1$s A</string>
+	<string name="power">Power:%1$s W</string>
+	<string name="roplug_state">Roplug state:%1$s</string>
+	
+	<string name="auto_billing">Auto billing</string>
+	<string name="auto_billing_title">The power rate of %1$s:%2$s yuan</string>
+	<string name="recalculate">Recalculate</string>
+	<string name="electricity_use">Power consumption:  %1$f degree</string>
+	<string name="yuan_per_degree">yuan/degree:</string>
+	
+	<!-- system setting -->	
+	<string name="setting">Setting</string>
+	<string name="over_protection">Over current protection</string>
+	<string name="close_over_protection">Sure to close over current protection?？</string>
+	<string name="open_over_protection">Sure to open over current protection?？</string>
+	<string name="wifi_setting">WiFi WLAN control</string>
+	<string name="about_us">About us</string>
+	<string name="versionName">Version name</string>
+	<string name="feedBack">Feedback</string>
+	<string name="save_exit">Loginout</string>
+	<string name="modify_password">Modify password</string>
+	<string name="weixin_control">Weixin control</string>
+	<!-- smart energy saving -->
+	<string name="smart_energy_saving">Smart energy saving</string>    
+	
+	<!-- timing function -->
+	<string name="timing_function">Timing function</string>
+	<string name="timing_function_add">Add timing function</string>	
+	<string name="timing_function_modify">Edit timing function</string>	
+	<string name="title_select_sock">Select roplug</string>		
+	<string name="title_timing_time">Timing</string>				
+	<string name="title_circulation_mode">Circulation_mode</string>			
+	<string name="select_sock">Select roplug :</string>		
+	<string name="timing_time">Timing :</string>				
+	<string name="circulation_mode">Circulation_mode:</string>			
+	<string name="power_switch">Power switch :</string>		
+	<string name="power_on">Power on</string>
+	<string name="power_off">Power off</string>	
+	<string name="am">AM</string>
+	<string name="pm">PM</string>
+	<string name="monday">Monday</string>
+	<string name="tuesday">Tuesday</string>
+	<string name="wednesday">Wednesday</string>
+	<string name="thursday">Thursday</string>
+	<string name="friday">Friday</string>
+	<string name="saturday">Saturday</string>
+	<string name="sunday">Sunday</string>
+	<string name="workday">Workday</string>
+	<string name="week_end">Weekend</string>
+	<string name="week_all">Each day</string>
+	<string name="once">Each time</string>	
+	<string name="button_save">Save</string>
+	<string name="timing_function_error_select_socket_empty">The socket is not selected, please operate after selecting!</string>
+	<string name="timing_function_add_success">Successfully add timing function!</string>	
+	<string name="timing_function_add_failure">Failure to add timing function, please try again!</string>
+	<string name="timing_function_modify_success">Successfully edit timing function!</string>	
+	<string name="timing_function_modify_failure">Failure to edit timing function, please try again!</string>
+	
+	<string name="electricity_analyse">Analysis of electricity consumption comparison</string>    
+	<string name="smart_light_control">Smart light control</string>
+	
+	<!-- login and register -->
+	<string name="user_login">User login</string>	
+	<string name="remember_password">Remember password</string>
+	<string name="auto_login">Auto login</string>
+	<string name="login">Login</string>
+	<string name="logining">Logging in</string>
+	<string name="username">User name</string>
+	<string name="password">Password</string>
+	<string name="new_user">New user</string>
+	<string name="registe">Register</string>
+	<string name="registing">Registering</string>
+	<string name="registe_success">Congratulation! Register successfully!</string>
+	<string name="registe_error_name_exist">Sorry!%1$shas existed, please re-register!</string>
+	<string name="registe_error_timeout">Network timeout, please re-register!</string>
+	<string name="login_error">User name or password error, please re-login!</string>
+	<string name="exit_save">Loginout</string>	
+	<string name="old_password">Current password</string>
+	<string name="new_password">New password</string>
+	<string name="confirm_password">Confirmation password</string>	
+	<string name="password_tip">6~16 letters or Num.</string>
+	<string name="show_password">Show password</string>
+	<string name="password_match_error">The format of %1$S is error, Please enter again!</string>
+	<string name="password_confirm_error">Confirmation password and new password do not match, please enter again!</string>
+	<string name="password_same">New password can not be same with the old password, please enter again!</string>
+	<string name="password_input_error">Original password error. You still have %1$d chances to enter!</string>
+	<string name="password_input_count_max">Password has been entered for over 5 times, please try next time!</string>
+	<string name="change_password_success">Successfully modify password</string>
+	<string name="change_password_failure">Failure to modify password, please try again!</string>
+	<string name="delete_confirm_text">Sure to delete%1$s?</string>	
+	<string name="change_name_success">Successfully rename!</string>
+	<string name="delete_success">Delete successfully!</string>	
+	<string name="company_name">NewBeen Cop.,</string>
+	<string name="copy_right">"Copyright © 2012-2017 NewBeen Cop. All Right Reserved"</string>
+	
+	<!-- Exception message -->
+	<string name="net_timeout">Network timeout, please try again!</string>
+	<string name="server_link_timeout_title">Connection timeout</string>
+	<string name="server_link_timeout">Server connection timeout. Sure to try again?</string>
+	<string name="toast_title">Prompt message</string>	
+	<string name="operate_failure">Operation failure, please try again!</string>
+	<string name="same_device_name">%1$s has existed, please try again!</string>
+	<string name="check_password_failure">Password error, please enter again!</string>
+	<string name="add_server_failure">This device has been connected with other user, you can only operate locally!</string>
+	<string name="session_timeout">Session timeout, please login again!</string>
+    <string name="net_error_tip">Current network is not available, please check your network setting.</string>
+	<string name="device_offline_error">Device is offline</string>
+
+	<!-- Version Update -->
+	<string name="version_update_title">Update software version</string>
+	<string name="new_version_info">Dear, there has new software package, download right away..</string>
+	<string name="download">Download</string>
+	<string name="download_next">Download next time</string>
+	<string name="downloading">Updating version</string>
+	<string name="progress">Progress: </string>
+	<string name="link_failure">Failure to connect with server, please try later。</string>
+	<string name="no_sdcard">"No storage card is detected in mobile, please install the card before upgrading。"</string>
+	<string name="current_version">Current version:</string>
+	<string name="new_version">Latest version now, no need update!!</string>
+	<string name="firmware_update_title">Firmware version update</string>
+	<string name="new_firmware_version_info">Dear, there has new firmware package, download right away?</string>
+	<string name="firmware_update_success">Successfully update the firmware of %1$s!</string>
+	<string name="firmware_update_failure">Failure to update the firmware of %1$s!</string>
+	<string name="firmware_updating">Updating</string>
+
+	<!-- Message Synchronization -->
+	<string name="current_firmware_updating_synch">The roplug of %1$s is updating firmware version!Please select another roplug!</string>
+	<string name="firmware_updating_synch">The roplug of %1$s is updating firmware version!</string>
+	<string name="add_new_socket_synch">New add roplug of %1$s!</string>
+	<string name="delete_current_socket_synch">The roplug of %1$s has deleted！Please select another roplug!</string>
+	<string name="delete_socket_synch">The roplug of %1$s has deleted!</string>
+	<string name="modify_socket_synch">The roplug of %1$s has rename to %2$s.</string>
+	<string name="onoff_line_current_socket_synch">The roplug of %1$s has offline!Please select another roplug!</string>
+	<string name="off_line_socket_synch">The roplug of %1$s has offline!</string>
+	<string name="on_line_socket_synch">The roplug of %1$s has online!</string>
+	<string name="add_new_timing_synch">A new timing function is added, you can return timing list view.</string>
+	<string name="delete_timing_synch">The timing function of %1$s has deleted，Please select another!</string>
+	<string name="modify_timing_synch">The timing function of %1$s has modified，Please select another!</string>
+    <string name="rename_failure">Input can\'t be more then 20 characters</string>
+
+</resources>

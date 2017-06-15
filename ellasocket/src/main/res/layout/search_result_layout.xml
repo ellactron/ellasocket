@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_list_item_height"
+            android:background="@drawable/y335_bg_title_blue"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_switch_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/system_padding_left"
+                android:background="@drawable/button_switch"
+                android:contentDescription="@string/app_name"
+                android:onClick="searchDevice"
+                android:paddingBottom="@dimen/search_button_margin_padding_bottom" 
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/btn_title_return"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/system_padding_left"
+                android:background="@null"
+                android:drawableLeft="@drawable/button_title_return"
+                android:drawablePadding="10dp"
+                android:gravity="left|center_vertical"
+                android:onClick="searchDevice"
+                android:text="@string/device_title"
+                android:textColor="@color/system_color_white"
+                android:textSize="@dimen/title_textsize"/>
+
+            <ImageButton
+                android:id="@+id/ib_search_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_search_bg"
+                android:layout_marginRight="@dimen/system_padding_left"
+                android:contentDescription="@string/app_name"
+                android:onClick="searchDevice"
+                android:paddingBottom="@dimen/search_button_margin_padding_bottom" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/y335_bg_list_view"
+            android:orientation="vertical">
+
+            <rici.roplug.open.view.RefreshListView
+                android:id="@+id/lv_search_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/y335_line" >
+            </rici.roplug.open.view.RefreshListView>
+
+            <Button
+                android:id="@+id/btn_failure_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/search_failure_icon_margin_bottom"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:onClick="searchDevice"
+                android:visibility="gone"
+                android:drawableTop="@drawable/y335_search_failure_icon"
+                android:text="@string/search_none_device"
+                android:textColor="@color/time_picker_textcolor"
+                android:textSize="@dimen/search_failure_textsize" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

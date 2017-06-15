@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="socket_grid_input_wifi_offset_y">250</integer>
+    <integer name="socket_electric_toast_text_size">72</integer>
+    <integer name="socket_electric_month_line_margin_v">38</integer>
+    <integer name="socket_electric_year_line_margin_v">48</integer>
+    <integer name="socket_electric_year_line_margin_h">30</integer>
+    <integer name="socket_electric_text_size">36</integer>
+    <integer name="socket_gridlayout_optionmenu_offset_y">760</integer>
+    <integer name="socket_lock_logo_left">66</integer>
+    <integer name="socket_lock_logo_top">49</integer>
+
+    <!-- day socket electric view -->
+    <integer name="socket_electric_day_line_margin_v">18</integer>
+    <integer name="socket_electric_day_line_margin_h">47</integer>
+    <integer name="socket_electric_day_text_size">26</integer>
+    <integer name="socket_electric_day_diagram_bottom">15</integer>
+    <integer name="socket_electric_day_scroll_rect_height">240</integer>
+    <integer name="socket_electric_day_hightlight_bg_offset">6</integer>
+    <integer name="socket_electric_day_text_offset">3</integer>
+    <integer name="socket_electric_day_large_ten_text_offset">15</integer>
+    <integer name="socket_electric_day_draw_line_bottom">40</integer>
+    <integer name="socket_electric_day_popupwindow_text_offset_X">38</integer>
+    <integer name="socket_electric_day_popupwindow_text_offset_Y">35</integer>
+    <integer name="socket_electric_day_offset_H">20</integer>
+    <integer name="socket_electric_year_popup_bottom">15</integer>
+</resources>

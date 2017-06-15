@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/auto_charge_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_charge_list_item_height"
+        android:orientation="horizontal" 
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/auto_charge_item_text"
+            android:id="@+id/deviceName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/auto_charge_item_image"
+            android:id="@+id/deviceIcon"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/popupwindow_line" /> 
+</LinearLayout>
