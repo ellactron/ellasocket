@@ -26,7 +26,6 @@ android {
     }
 
     compileSdkVersion 19
-    buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "rici.roplug.open"
         minSdkVersion 14
@@ -35,10 +34,10 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.0.0'
-    compile 'com.google.code.gson:gson:2.7'
-    compile files('libs/newsimpleconfiglib.jar')
-    compile files('libs/roplug_open_1.0.1_.jar')
-    compile files('libs/simpleconfiglib.jar')
-    compile files('libs/zxing.jar')
+    implementation 'com.android.support:support-v4:19.0.0'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation files('libs/newsimpleconfiglib.jar')
+    implementation files('libs/roplug_open_1.0.1_.jar')
+    implementation files('libs/simpleconfiglib.jar')
+    implementation files('libs/zxing.jar')
 }
